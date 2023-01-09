@@ -49,7 +49,7 @@ public class ExcelController {
 	@GetMapping("/employees")
 	public ResponseEntity<List<Employee>> getAllTutorials() {
 		try {
-			List<Employee> tutorials = fileService.getAllTutorials();
+			List<Employee> tutorials = fileService.getAllEmployees();
 
 			if (tutorials.isEmpty()) {
 				return new ResponseEntity<>(HttpStatus.NO_CONTENT);
